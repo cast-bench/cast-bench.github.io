@@ -1,0 +1,61 @@
+{
+  "video_file": "sav_000238_q3.mp4",
+  "question_type": "PA",
+  "question_type_label": "Predictive Anticipation",
+  "question": "What would happen to the beverage?",
+  "answer": "The soda would build up pressure inside the box.",
+  "options": [
+    {
+      "text": "The soda would spill out of the box immediately."
+    },
+    {
+      "text": "The soda would freeze from being handled roughly."
+    },
+    {
+      "text": "The soda bottles would explode right away."
+    },
+    {
+      "text": "The soda cans would crack due to the impact."
+    },
+    {
+      "text": "The soda would lose carbonation from the tossing."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 3,
+      "start_time_str": "00:00",
+      "end_time_str": "00:03",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person in a light gray shirt tosses a box of soda, which could cause it to build up pressure.",
+      "bboxes": {
+        "0": "[113, 218, 286, 471]",
+        "1": "[159, 156, 283, 414]",
+        "2": "[274, 45, 519, 387]",
+        "3": "[162, 124, 350, 395]"
+      }
+    },
+    {
+      "start_time": 7,
+      "end_time": 9,
+      "start_time_str": "00:07",
+      "end_time_str": "00:09",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person tosses a second box of soda, which could cause it to build up pressure.",
+      "bboxes": {
+        "7": "[0, 62, 178, 653]",
+        "8": "[49, 77, 222, 662]",
+        "9": "[17, 66, 161, 663]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Person 1",
+      "color": "#f0c040"
+    }
+  ]
+}

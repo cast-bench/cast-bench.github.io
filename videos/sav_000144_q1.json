@@ -1,0 +1,73 @@
+{
+  "video_file": "sav_000144_q1.mp4",
+  "question_type": "CE",
+  "question_type_label": "Causal Explanation",
+  "question": "Why does the child on the green balance bike stop riding between 00:01 and 00:08?",
+  "answer": "Because the person in the black puffer jacket is adjusting the child's shoe.",
+  "options": [
+    {
+      "text": "Because the person in the black puffer jacket is adjusting the child's helmet."
+    },
+    {
+      "text": "Because the person in the long dark coat told the child to stop moving."
+    },
+    {
+      "text": "Because the person in the long dark coat is adjusting the bike's handlebar."
+    },
+    {
+      "text": "The person in the puffer jacket is holding the bike's handlebar, preventing it from moving."
+    },
+    {
+      "text": "The person in the puffer jacket is holding the bike's seat, preventing it from moving."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 1,
+      "end_time": 8,
+      "start_time_str": "00:01",
+      "end_time_str": "00:08",
+      "instance_label": "Child 1",
+      "instance_color": "#f0c040",
+      "rationale": "The child remains stationary on the balance bike during this entire period.",
+      "bboxes": {
+        "1": "[537, 523, 719, 779]",
+        "2": "[561, 528, 719, 799]",
+        "3": "[519, 530, 719, 806]",
+        "4": "[508, 535, 706, 820]",
+        "5": "[510, 549, 712, 832]",
+        "6": "[505, 556, 706, 838]",
+        "7": "[508, 561, 704, 845]",
+        "8": "[497, 566, 705, 849]"
+      }
+    },
+    {
+      "start_time": 1,
+      "end_time": 7,
+      "start_time_str": "00:01",
+      "end_time_str": "00:07",
+      "instance_label": "Person 2",
+      "instance_color": "#40c0d0",
+      "rationale": "The person bends over and crouches next to the child, interacting to help the child with their shoe.",
+      "bboxes": {
+        "1": "[332, 361, 515, 778]",
+        "2": "[409, 434, 625, 817]",
+        "3": "[369, 604, 575, 823]",
+        "4": "[352, 618, 553, 836]",
+        "5": "[354, 627, 558, 847]",
+        "6": "[352, 634, 555, 851]",
+        "7": "[351, 639, 551, 857]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Child 1",
+      "color": "#f0c040"
+    },
+    {
+      "label": "Person 2",
+      "color": "#40c0d0"
+    }
+  ]
+}

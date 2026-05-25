@@ -1,0 +1,64 @@
+{
+  "video_file": "sav_000267_q3.mp4",
+  "question_type": "CR",
+  "question_type_label": "Counterfactual Reasoning",
+  "question": "If the person in the black puffy jacket had not looked ahead, what would have been the most direct physical consequence?",
+  "answer": "They would have walked into the path of the moving car with camera.",
+  "options": [
+    {
+      "text": "They would have walked into the path of the silver car."
+    },
+    {
+      "text": "The person would have been hit by the silver car."
+    },
+    {
+      "text": "The person would have been hit by the descending red and white barrier arm."
+    },
+    {
+      "text": "They would have been struck by the approaching silver car."
+    },
+    {
+      "text": "They would have been struck by the descending red and white barrier arm."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 6,
+      "start_time_str": "00:00",
+      "end_time_str": "00:06",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person was initially walking on a trajectory that intersected with the car's path.",
+      "bboxes": {
+        "0": "[2251, 624, 2277, 671]",
+        "1": "[2135, 620, 2172, 734]",
+        "2": "[1950, 602, 2000, 764]",
+        "3": "[1896, 568, 1918, 606]",
+        "4": "[1898, 531, 1978, 742]",
+        "5": "[1845, 494, 1956, 749]",
+        "6": "[1763, 468, 1865, 757]"
+      }
+    },
+    {
+      "start_time": 6,
+      "end_time": 8,
+      "start_time_str": "00:06",
+      "end_time_str": "00:08",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person stops their forward movement just as the car occupies their intended path.",
+      "bboxes": {
+        "6": "[1763, 468, 1865, 757]",
+        "7": "[1737, 479, 1887, 856]",
+        "8": "[1805, 470, 1967, 954]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Person 1",
+      "color": "#f0c040"
+    }
+  ]
+}

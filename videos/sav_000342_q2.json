@@ -1,0 +1,60 @@
+{
+  "video_file": "sav_000342_q2.mp4",
+  "question_type": "CE",
+  "question_type_label": "Causal Explanation",
+  "question": "How did the person in the pink coat navigate through the transit hall?",
+  "answer": "She strode purposefully while carrying a tote bag and umbrella.",
+  "options": [
+    {
+      "text": "She walked slowly while checking her phone for directions."
+    },
+    {
+      "text": "She ran quickly while checking her phone for directions."
+    },
+    {
+      "text": "She strode purposefully while carrying a suitcase and umbrella."
+    },
+    {
+      "text": "She moved cautiously, stopping to use a ticket vending machine."
+    },
+    {
+      "text": "She moved cautiously, stopping to consult the information kiosk."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 16,
+      "start_time_str": "00:00",
+      "end_time_str": "00:16",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "A person in a pink coat, with a black backpack, strides purposefully through the transit hall, carrying a tote bag and an umbrella.",
+      "bboxes": {
+        "0": "[373, 316, 426, 383]",
+        "1": "[411, 319, 466, 438]",
+        "2": "[447, 340, 504, 464]",
+        "3": "[463, 375, 525, 509]",
+        "4": "[473, 415, 534, 539]",
+        "5": "[484, 453, 549, 589]",
+        "6": "[514, 492, 584, 629]",
+        "7": "[586, 537, 657, 687]",
+        "8": "[675, 578, 746, 732]",
+        "9": "[780, 621, 854, 780]",
+        "10": "[873, 681, 946, 846]",
+        "11": "[955, 732, 1038, 875]",
+        "12": "[1080, 779, 1186, 971]",
+        "13": "[1241, 795, 1344, 985]",
+        "14": "[1407, 785, 1520, 969]",
+        "15": "[1566, 778, 1684, 945]",
+        "16": "[1719, 762, 1837, 917]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Person 1",
+      "color": "#f0c040"
+    }
+  ]
+}

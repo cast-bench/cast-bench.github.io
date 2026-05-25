@@ -1,0 +1,60 @@
+{
+  "video_file": "sav_008134_q3.mp4",
+  "question_type": "PA",
+  "question_type_label": "Predictive Anticipation",
+  "question": "Based on the actions of the person in the light blue-colored top, what is the most likely immediate next action they will perform after 00:10?",
+  "answer": "They will walk away from the chair and towards the exit.",
+  "options": [
+    {
+      "text": "They will push the chair back under the table."
+    },
+    {
+      "text": "They will turn back around and sit down in the chair again."
+    },
+    {
+      "text": "They will pull the chair further out from the table."
+    },
+    {
+      "text": "They will walk away from the chair and towards the window."
+    },
+    {
+      "text": "They will turn back around and pick up something from the chair."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 5,
+      "end_time": 7,
+      "start_time_str": "00:05",
+      "end_time_str": "00:07",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person stands up and orients their body away from the table.",
+      "bboxes": {
+        "5": "[94, 0, 265, 340]",
+        "6": "[81, 0, 222, 345]",
+        "7": "[48, 0, 246, 406]"
+      }
+    },
+    {
+      "start_time": 8,
+      "end_time": 10,
+      "start_time_str": "00:08",
+      "end_time_str": "00:10",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person puts on their backpack and begins to take a step, indicating departure.",
+      "bboxes": {
+        "8": "[24, 26, 295, 609]",
+        "9": "[350, 41, 529, 526]",
+        "10": "[434, 8, 580, 391]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Person 1",
+      "color": "#f0c040"
+    }
+  ]
+}

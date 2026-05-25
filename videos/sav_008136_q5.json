@@ -1,0 +1,78 @@
+{
+  "video_file": "sav_008136_q5.mp4",
+  "question_type": "ID",
+  "question_type_label": "Inferential Description",
+  "question": "What is the most likely level of expertise of the person in the black shirt?",
+  "answer": "They are a professional videographer with expert-level skill.",
+  "options": [
+    {
+      "text": "They are a professional photographer, not a videographer."
+    },
+    {
+      "text": "They are a beginner learning basic camera operation."
+    },
+    {
+      "text": "They are an intermediate hobbyist with moderate camera skills."
+    },
+    {
+      "text": "They are a skilled amateur videographer with some experience."
+    },
+    {
+      "text": "They are a solo professional without any crew support."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 14,
+      "start_time_str": "00:00",
+      "end_time_str": "00:14",
+      "instance_label": "Camcorder 1",
+      "instance_color": "#f0c040",
+      "rationale": "The person in the black shirt is operating a large, professional-grade camcorder, not a consumer device.",
+      "bboxes": {
+        "0": "[295, 213, 560, 381]",
+        "1": "[341, 209, 614, 396]",
+        "2": "[328, 180, 606, 373]",
+        "3": "[357, 148, 639, 345]",
+        "4": "[437, 187, 713, 382]",
+        "5": "[454, 182, 707, 378]",
+        "6": "[273, 220, 496, 397]",
+        "7": "[208, 224, 439, 400]",
+        "8": "[219, 215, 450, 391]",
+        "9": "[347, 165, 582, 345]",
+        "10": "[434, 197, 703, 374]",
+        "11": "[590, 191, 870, 372]",
+        "12": "[690, 175, 975, 356]",
+        "13": "[719, 95, 991, 295]",
+        "14": "[724, 115, 1020, 303]"
+      }
+    },
+    {
+      "start_time": 10,
+      "end_time": 14,
+      "start_time_str": "00:10",
+      "end_time_str": "00:14",
+      "instance_label": "Diffuser 2",
+      "instance_color": "#40c0d0",
+      "rationale": "Another person joins him with a light diffuser, indicating a coordinated, professional video crew.",
+      "bboxes": {
+        "10": "[0, 171, 77, 341]",
+        "11": "[96, 176, 189, 322]",
+        "12": "[222, 154, 439, 367]",
+        "13": "[359, 41, 499, 266]",
+        "14": "[374, 57, 528, 288]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Camcorder 1",
+      "color": "#f0c040"
+    },
+    {
+      "label": "Diffuser 2",
+      "color": "#40c0d0"
+    }
+  ]
+}

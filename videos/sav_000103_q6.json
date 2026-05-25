@@ -1,0 +1,78 @@
+{
+  "video_file": "sav_000103_q6.mp4",
+  "question_type": "CE",
+  "question_type_label": "Causal Explanation",
+  "question": "How does the person in the green shirt manage to get the reluctant dog to finally walk into the room?",
+  "answer": "By pulling it to the doorway and then opening the door for it.",
+  "options": [
+    {
+      "text": "By using a treat to lure the dog to follow them into the room."
+    },
+    {
+      "text": "They use a leash to lure the dog into the room."
+    },
+    {
+      "text": "By pushing it to the doorway and then opening the door for it."
+    },
+    {
+      "text": "They use a toy to lure the dog into the room."
+    },
+    {
+      "text": "By using a treat to lure the dog to follow them out of the room."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 4,
+      "end_time": 6,
+      "start_time_str": "00:04",
+      "end_time_str": "00:06",
+      "instance_label": "Dog 1",
+      "instance_color": "#f0c040",
+      "rationale": "After being dragged, the dog stands up and is led towards the door.",
+      "bboxes": {
+        "4": "[161, 682, 339, 811]",
+        "5": "[226, 670, 356, 803]",
+        "6": "[291, 672, 468, 770]"
+      }
+    },
+    {
+      "start_time": 7,
+      "end_time": 9,
+      "start_time_str": "00:07",
+      "end_time_str": "00:09",
+      "instance_label": "Garment 2",
+      "instance_color": "#40c0d0",
+      "rationale": "The person raises their arm to the door, indicating they are about to open it.",
+      "bboxes": {
+        "7": "[412, 515, 491, 611]",
+        "8": "[376, 512, 477, 604]",
+        "9": "[374, 513, 474, 606]"
+      }
+    },
+    {
+      "start_time": 10,
+      "end_time": 12,
+      "start_time_str": "00:10",
+      "end_time_str": "00:12",
+      "instance_label": "Dog 1",
+      "instance_color": "#f0c040",
+      "rationale": "The dog then walks through the doorway, disappearing into the room.",
+      "bboxes": {
+        "10": "[368, 634, 455, 717]",
+        "11": "[439, 647, 472, 723]",
+        "12": "[463, 676, 469, 715]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Dog 1",
+      "color": "#f0c040"
+    },
+    {
+      "label": "Garment 2",
+      "color": "#40c0d0"
+    }
+  ]
+}

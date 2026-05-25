@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#554f4d"/>
+  <defs>
+    <!-- Lower-right triangle: where ring 2 passes in front of ring 1 -->
+    <clipPath id="clip-front">
+      <polygon points="64,0 64,64 0,64"/>
+    </clipPath>
+  </defs>
+  <!-- Ring 2, back layer -->
+  <circle cx="40" cy="40" r="13" fill="none" stroke="#fff" stroke-width="6"/>
+  <!-- Ring 1, middle layer (in front of ring 2 in upper-left overlap) -->
+  <circle cx="24" cy="24" r="13" fill="none" stroke="#fff" stroke-width="6"/>
+  <!-- Ring 2, front portion (lower-right area, in front of ring 1) -->
+  <circle cx="40" cy="40" r="13" fill="none" stroke="#fff" stroke-width="6" clip-path="url(#clip-front)"/>
+</svg>

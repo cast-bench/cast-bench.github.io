@@ -1,0 +1,73 @@
+{
+  "video_file": "sav_000670_q3.mp4",
+  "question_type": "CR",
+  "question_type_label": "Counterfactual Reasoning",
+  "question": "If the woman had not been rushing with her suitcase, what would the person in the gray coat likely have done?",
+  "answer": "He would not have stepped back to make room.",
+  "options": [
+    {
+      "text": "He would have continued walking without checking his phone."
+    },
+    {
+      "text": "He would have continued pushing his suitcase without checking his phone."
+    },
+    {
+      "text": "He would have offered to carry her suitcase instead."
+    },
+    {
+      "text": "He would not have put away his phone to make room."
+    },
+    {
+      "text": "He would have asked her for directions instead."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 9,
+      "start_time_str": "00:00",
+      "end_time_str": "00:09",
+      "instance_label": "Luggage 1",
+      "instance_color": "#f0c040",
+      "rationale": "A woman dressed in black, wearing a black hat, quickly pushes a suitcase through the ticket hall.",
+      "bboxes": {
+        "0": "[188, 783, 298, 923]",
+        "1": "[253, 783, 362, 922]",
+        "2": "[275, 781, 383, 915]",
+        "3": "[318, 766, 419, 894]",
+        "4": "[422, 744, 517, 868]",
+        "5": "[554, 736, 649, 855]",
+        "6": "[686, 732, 762, 844]",
+        "7": "[788, 710, 836, 830]",
+        "8": "[-1, -1, -1, -1]",
+        "9": "[-1, -1, -1, -1]"
+      }
+    },
+    {
+      "start_time": 6,
+      "end_time": 10,
+      "start_time_str": "00:06",
+      "end_time_str": "00:10",
+      "instance_label": "Person 2",
+      "instance_color": "#40c0d0",
+      "rationale": "The person in a gray coat, carrying a black suitcase, glanced at their phone and stepped back to make room for the woman.",
+      "bboxes": {
+        "6": "[684, 529, 775, 669]",
+        "7": "[655, 534, 769, 750]",
+        "8": "[647, 566, 760, 851]",
+        "9": "[670, 614, 781, 921]",
+        "10": "[685, 638, 800, 850]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Luggage 1",
+      "color": "#f0c040"
+    },
+    {
+      "label": "Person 2",
+      "color": "#40c0d0"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "video_file": "sav_008307_q4.mp4",
+  "question_type": "CR",
+  "question_type_label": "Counterfactual Reasoning",
+  "question": "What would happen if the toddler in the white patterned shirt suddenly ran away?",
+  "answer": "The man in the black t-shirt would stop attending to the stroller and pursue the toddler.",
+  "options": [
+    {
+      "text": "The child could trip over the stroller and fall."
+    },
+    {
+      "text": "The woman in the pink shirt would stop pushing the stroller and pursue the toddler."
+    },
+    {
+      "text": "The child could lose balance and fall."
+    },
+    {
+      "text": "The man in the black t-shirt would stop pushing the stroller and look for the toddler."
+    },
+    {
+      "text": "The woman in the pink shirt would call out the toddler's name to get them to stop."
+    }
+  ],
+  "evidences": [
+    {
+      "start_time": 0,
+      "end_time": 1,
+      "start_time_str": "00:00",
+      "end_time_str": "00:01",
+      "instance_label": "Person 1",
+      "instance_color": "#f0c040",
+      "rationale": "The man is bent over, in close proximity to the toddler and stroller, indicating a supervisory role.",
+      "bboxes": {
+        "0": "[739, 307, 876, 536]",
+        "1": "[936, 268, 1212, 719]"
+      }
+    },
+    {
+      "start_time": 0,
+      "end_time": 1,
+      "start_time_str": "00:00",
+      "end_time_str": "00:01",
+      "instance_label": "Person 2",
+      "instance_color": "#40c0d0",
+      "rationale": "The toddler is standing right next to the man, establishing a clear social unit of caregiver and child.",
+      "bboxes": {
+        "0": "[793, 470, 897, 719]",
+        "1": "[-1, -1, -1, -1]"
+      }
+    }
+  ],
+  "instance_legend": [
+    {
+      "label": "Person 1",
+      "color": "#f0c040"
+    },
+    {
+      "label": "Person 2",
+      "color": "#40c0d0"
+    }
+  ]
+}
