@@ -65,7 +65,7 @@
       <a href="https://huggingface.co/datasets/wovenbytoyota-vai/CaST-Bench" class="btn-outline-brand" target="_blank">
         <i class="fas fa-database mr-1"></i> Dataset
       </a>
-      <a href="#leaderboard" class="btn-outline-brand disabled">
+      <a href="https://wovenbytoyota-vai-cast-bench-leaderboard.hf.space/" class="btn-outline-brand" target="_blank">
         <i class="fas fa-trophy mr-1"></i> Online Leaderboard
       </a>
     </div>
@@ -287,7 +287,7 @@
       <h2>Leaderboard</h2>
       <span class="title-bar"></span>
       <div class="mt-4">
-        <a href="#leaderboard" class="btn-outline-brand disabled">
+        <a href="https://wovenbytoyota-vai-cast-bench-leaderboard.hf.space/" class="btn-outline-brand" target="_blank">
           <i class="fas fa-trophy mr-1"></i> Online Leaderboard
         </a>
       </div>
@@ -296,86 +296,71 @@
     <div class="leaderboard-wrapper">
       <table id="leaderboard-table">
         <thead>
-          <!-- Row 1: group labels -->
-          <tr class="thead-group-row">
-            <th rowspan="2">Model</th>
-            <th rowspan="2" data-tooltip="Multiple-choice question accuracy (%)">
-              <span class="th-inner">MCQ Acc ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th colspan="2" class="th-group-label">Temporal</th>
-            <th colspan="2" class="th-group-label">Spatio-Temporal</th>
-            <th colspan="2" class="th-group-label">Combined</th>
-          </tr>
-          <!-- Row 2: metric names -->
           <tr>
-            <th data-tooltip="Recall of evidence instances with temporal IoU ≥ 0.5">
-              <span class="th-inner">R@0.5 ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th data-tooltip="Instance-Matched temporal IoU — measures temporal grounding accuracy of the predicted causal chain">
-              <span class="th-inner">IM-tIoU ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th data-tooltip="Recall of evidence instances with spatio-temporal vIoU ≥ 0.1">
-              <span class="th-inner">R@0.1 ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th data-tooltip="Instance-Matched spatio-temporal IoU — measures spatial + temporal grounding accuracy">
-              <span class="th-inner">IM-vIoU ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th data-tooltip="% of correct answers that are also supported by well-grounded evidence (vIoU ≥ threshold)">
-              <span class="th-inner">Faithful ↑<span class="sort-icon">↕</span></span>
-            </th>
-            <th data-tooltip="% of correct answers with no instance having adequate evidence grounding">
-              <span class="th-inner">Spurious ↓<span class="sort-icon">↕</span></span>
-            </th>
+            <th><span class="th-name">Rank</span></th>
+            <th><span class="th-name">Model</span></th>
+            <th>QA Accuracy ↑</th>
+            <th>Faithful Rate ↑</th>
+            <th>Evidence Temp. IoU ↑</th>
+            <th>Evidence Spatio-Temp. IoU ↑</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Proprietary group -->
-          <tr class="group-header" data-group="proprietary">
-            <td colspan="8">Proprietary Models</td>
+          <tr>
+            <td class="rank-col">1</td>
+            <td>Gemini-3.1-pro</td>
+            <td class="val-green">76.2%</td>
+            <td class="val-green">55.0%</td>
+            <td class="val-green">50.5%</td>
+            <td class="val-red">18.7%</td>
           </tr>
-          <tr class="group-proprietary">
-            <td>Gemini-2.5-Pro</td><td>50.34</td><td>23.29</td><td>21.53</td><td>8.14</td><td>2.46</td><td>7.60</td><td>42.26</td>
+          <tr>
+            <td class="rank-col">2</td>
+            <td>Claude-sonnet-4.6</td>
+            <td class="val-green">75.0%</td>
+            <td class="val-orange">35.0%</td>
+            <td class="val-orange">29.5%</td>
+            <td class="val-red">7.9%</td>
           </tr>
-          <tr class="group-proprietary">
-            <td>Gemini-2.5-Flash</td><td>45.60</td><td>29.45</td><td>27.63</td><td>13.29</td><td>3.52</td><td>9.97</td><td>33.35</td>
+          <tr>
+            <td class="rank-col">3</td>
+            <td>Gemini-3.5-flash</td>
+            <td class="val-green">72.5%</td>
+            <td class="val-orange">47.5%</td>
+            <td class="val-green">39.6%</td>
+            <td class="val-red">15.7%</td>
           </tr>
-          <tr class="group-proprietary">
-            <td>GPT-5</td><td>46.32</td><td>27.83</td><td>26.61</td><td>16.19</td><td>4.31</td><td>12.68</td><td>32.91</td>
+          <tr>
+            <td class="rank-col">4</td>
+            <td>Claude-opus-4.7</td>
+            <td class="val-green">70.0%</td>
+            <td class="val-orange">38.8%</td>
+            <td class="val-orange">29.9%</td>
+            <td class="val-red">11.3%</td>
           </tr>
-          <tr class="group-proprietary">
-            <td>GPT-5 mini</td><td>37.22</td><td>21.28</td><td>19.89</td><td>8.31</td><td>2.41</td><td>6.29</td><td>30.83</td>
+          <tr>
+            <td class="rank-col">5</td>
+            <td>Qwen3-VL-8B-Instruct</td>
+            <td class="val-green">61.3%</td>
+            <td class="val-red">10.0%</td>
+            <td class="val-red">12.5%</td>
+            <td class="val-red">2.6%</td>
           </tr>
-
-          <!-- Open-source group -->
-          <tr class="group-header" data-group="opensource">
-            <td colspan="8">Open-Source Models</td>
+          <tr>
+            <td class="rank-col">6</td>
+            <td>Gemma-4-26B-A4B-it</td>
+            <td class="val-green">61.3%</td>
+            <td class="val-orange">22.5%</td>
+            <td class="val-orange">26.8%</td>
+            <td class="val-red">5.5%</td>
           </tr>
-          <tr class="group-opensource">
-            <td>GLM-4.1V-9B-Thinking</td><td>39.55</td><td>17.50</td><td>16.58</td><td>6.18</td><td>1.93</td><td>4.74</td><td>34.32</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>InternVL-3.5-30B-A3B</td><td>44.53</td><td>9.04</td><td>8.33</td><td>0.42</td><td>0.25</td><td>0.48</td><td>44.00</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>InternVL-3.5-14B</td><td>43.27</td><td>9.24</td><td>8.77</td><td>0.56</td><td>0.33</td><td>0.73</td><td>42.55</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>InternVL-3.5-8B</td><td>40.95</td><td>9.40</td><td>8.59</td><td>0.61</td><td>0.28</td><td>0.58</td><td>40.37</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>Qwen3-VL-8B-Thinking</td><td>39.16</td><td>10.44</td><td>10.23</td><td>2.69</td><td>0.87</td><td>2.27</td><td>36.74</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>Qwen3-VL-8B-Instruct</td><td>43.13</td><td>10.63</td><td>10.51</td><td>3.41</td><td>1.07</td><td>2.76</td><td>39.84</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>Qwen3-VL-4B-Instruct</td><td>45.30</td><td>11.65</td><td>11.21</td><td>2.94</td><td>0.93</td><td>2.76</td><td>42.30</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>Qwen2.5-VL-7B-Instruct</td><td>41.09</td><td>3.80</td><td>3.72</td><td>0.13</td><td>0.09</td><td>0.29</td><td>40.80</td>
-          </tr>
-          <tr class="group-opensource">
-            <td>MiMo-VL-7B-RL-2508</td><td>32.24</td><td>10.42</td><td>9.63</td><td>2.74</td><td>0.81</td><td>2.81</td><td>31.43</td>
+          <tr>
+            <td class="rank-col">7</td>
+            <td>InternVL3_5-14B</td>
+            <td class="val-green">58.8%</td>
+            <td class="val-red">2.5%</td>
+            <td class="val-red">15.7%</td>
+            <td class="val-red">1.0%</td>
           </tr>
         </tbody>
       </table>
@@ -426,11 +411,11 @@
     <div class="row taxonomy-figures">
       <div class="col-12 col-md-6 mb-4 mb-md-0">
         <img src="img/video_dist.png" alt="Video scene distribution">
-        <p class="fig-caption">Distribution of question types and subcategories</p>
+        <p class="fig-caption">Distribution of video scene categories</p>
       </div>
       <div class="col-12 col-md-6">
         <img src="img/question_types.png" alt="Question type distribution">
-        <p class="fig-caption">Distribution of video scene categories</p>
+        <p class="fig-caption">Distribution of question types and subcategories</p>
       </div>
     </div>
 
@@ -483,7 +468,7 @@
 
 <!-- Sample configuration: add rendered video JSON files here -->
 <script>
-window.CAST_DEBUG = true;
+window.CAST_DEBUG = false;
 window.CAST_SAMPLES = [
   'videos/sav_000144_q1.json',
   'videos/sav_000103_q6.json',

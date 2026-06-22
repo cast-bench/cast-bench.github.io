@@ -1,5 +1,20 @@
 # CaST-Bench 网站操作手册
 
+## 本地浏览网站
+
+在终端进入项目根目录，用 Python 内置服务器启动：
+
+```bash
+cd "/path/to/castbench.github.io"
+python3 -m http.server 8080
+```
+
+然后在浏览器打开 `http://localhost:8080`。
+
+> 路径中含空格，推荐使用服务器方式而非直接双击 `index.html`（`file://` 协议下视频和 JSON 加载可能被浏览器跨域策略拦截）。
+
+---
+
 ## 添加新的 Dataset Samples 视频
 
 ### 第一步：确认 video_id 和 question_index
